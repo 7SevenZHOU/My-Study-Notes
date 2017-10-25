@@ -1,0 +1,228 @@
+network
+node
+link
+host
+peering point
+peer to peer
+router:packet switching
+end system
+circuit switching
+message switching
+public network
+private network
+internet protocol
+overhead
+peer layer
+protocol stack
+multiplexing
+
+
+APRANET 美国国防部建立的第一个分组交换网
+NSFNET 美国国家科学基金网
+
+ISP:Internet Service Provider
+NAP:Network Access Point
+WWW:World Wide Web
+NGI Initiative:Next Generation Internet Initiative
+WAN:Wide Area Network
+MAN:Metropolitan Area Network
+LAN:Local Area Network
+PAN:Personal Area Network
+SNA:System Network Architecture
+OSI/RM:Open Systems Interconnection Reference Model
+
+
+bit rate: b/s bit/s bps
+
+计算机系统的带宽指的是能通过的最高数据率 b/s
+
+throughput 吞吐量  现实的测量
+
+transmission delay 发送时延（传输时延） =数据帧长度（b）/信道带宽（b/s）
+propagation delay 传播时延=信道长度（m）/电磁波在信道上的传播速率（m/s）
+处理时延
+排队时延
+总时延=发送时延+传输时延-处理时延-排队时延
+
+传播时延带宽积=传播时延*带宽
+
+RTT:Round-Trip Time
+
+D=D0/1-U           D0 当前时延 U 利用率    一般控制不超过百分之50
+
+应用层
+运输层
+网络层 (IP数据报)
+数据链路层 (帧)
+物理层
+
+
+TCP:Transmission Control Protocol
+UDP:User Datagram Protocol
+TCP/IP协议族：protocol suite
+
+PDU:Protocol Data Unit 协议数据单元
+SAP:Service Access Point
+
+通信的目的是传送消息(message)
+数据（data）是运送消息的实体
+信号（signal）是数据的电气或者电磁的表现
+
+单向信道（单工通信）
+双向交替信道（半双工通信）
+双向同时信道（全双工通信）
+
+基带信号
+基带调制
+载波（carrier)
+带通信号
+带通调制
+AM(调幅) FM(调频) PM(调相)
+QAM(正交振幅调制)：Quadrature Amplitude Modulation
+
+信噪比(dB)=10log(S/N)	dB:分贝
+
+香农公式：信道的极限信息传送速率C=W*log2(1+S/N) (b/s)    W为带宽 单位Hz  S,N单位为功率W
+
+FDM:Frequency Division Multiplexing
+TDM:Time Division Multiplexing
+CDM:Code Division Multiplexing
+STDM:Statistic TDM
+
+WDM:Wavelength Division Multiplexing
+DWDM:Dense Wavelength Division Multiplexing
+
+multiplexer
+demultiplexer
+concentrator:集中器
+
+PCM:Pulse Code Modulation
+
+网络适配器（拨号适配器，局域网适配器，一般的适配器都包括了数据链路层和物理层这两层的功能）
+
+数据链路层三个基本问题：封装成帧，透明传输，差错检测
+
+帧长=数据长度+帧首部长度+帧尾部长度
+
+MTU:Maximum Transfer Unit
+
+BER:Bit Error Rate
+
+CRC(循环冗余检测):Cyclic Redundancy Check  (how to prove?)
+
+FCS:Frame Check Sequence 为了检错而添加的冗余码
+
+帧丢失 帧重复 帧失序(加入帧编号，确认，重传机制)
+
+PPP:Point-to-Point Protocol
+
+HDLC:High-level Data Link Control
+
+PPPoE: PPP over Ethernet
+
+星型网 环形网 总线网 树型网 令牌环形网(token ring)
+
+Ethernet:以太网
+
+MAC(Media Access Control)子层(媒体接入控制子层)
+LLC(Logical Link Control)子层(逻辑链路控制子层)
+
+Network Interface Card
+
+曼彻斯特编码
+
+CSMA/CD:Carrier Sense Multiple Access with Collision Detection
+
+电磁波在1km电缆的传播时延为约5us
+争用期：contention period 又称碰撞窗口 collision window
+
+截断二进制指数退避：truncated binary exponential backoff
+
+以太网规定了最短有效帧长是64字节，凡长度小于64字节的帧都是由于冲突而异常中止的无效帧。应丢弃。
+
+OUI:Organizationally Unique Identifier
+EUI:Extended Unique Identifier
+
+混杂方式 嗅探器(Sniffer)
+
+网桥？透明网桥？
+
+中间设备：
+物理层 转发器(repeater)
+数据链路层 网桥 桥接器(bridge)
+网络层 路由器(router)
+网络层以上 网关(gateway)
+
+ARP(Address Resolution Protocol):地址解析协议
+
+IP数据报：首部加数据组成，首部固定长度为20字节，后面接有可选字段
+
+数据报的最大长度为2的16次方-1=65535字节
+TTL(Time To Live):生存时间 目前单位不是秒，是次数 为跳数限制 最大值为255、
+
+首部检验和：反码相加
+
+
+
+3级ip地址: <网络号>,<子网号>,<主机号>
+net-id host-id
+
+VLSM:Variable Length Subnet Mask
+
+CIDR:Classless Inter-Domain Routing
+128.14.35.7/20
+
+route aggregation 路由聚合
+
+最长前缀匹配 longest-prefix matching
+
+ICMP(Internet Control Message Protocol)
+
+PING:Packet InterNet Groper(分组网间探测)
+
+tracert(windows) traceroute(unix)
+
+OSPF:Open Shorteset Path First
+
+multicast router:多播路由器
+
+protocol port number
+
+
+socket:
+192.3.4.5:80(ip地址：端口号)
+
+DNS:Domain Name System
+
+WWW:World Wide Web
+
+URL:Uniform Resource Locator
+HTTP:HyperText Transfer Protocol
+HTML:HyperText Markup Language
+<协议>://<主机>:<端口>/<路径>
+
+proxy server:代理服务器
+
+CGI:Common Gataway Interface 通用网关
+
+SMTP:Simple Mail Transfer Protocol
+
+POP3:Post Office Protocol 3
+
+UA(用户代理):User Agent
+IMAP:Internet Message Access Protocol
+
+DHCP:Dynamic Host Configuration Protocol
+
+
+
+
+
+
+
+
+
+
+
+
+
