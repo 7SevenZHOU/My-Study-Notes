@@ -24,8 +24,9 @@ print("In global scope:", spam)
 ```
 
 _The output of the example code is:_
-
+```
 After local assignment: test spam
 After nonlocal assignment: nonlocal spam
 After global assignment: nonlocal spam
 In global scope: global spam
+```
