@@ -1,6 +1,7 @@
 # scope
 ## local nonlocal gobal
 
+'''python
 def scope_test():
     def do_local():
         spam = "local spam"
@@ -20,6 +21,7 @@ def scope_test():
 
 scope_test()
 print("In global scope:", spam)
+'''
 
 _The output of the example code is:_
 
