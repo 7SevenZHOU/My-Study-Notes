@@ -1,3 +1,3 @@
 INT_MIN  
-INM_MAX  
+INT_MAX  
 _swap()_ can swap two nodes in tree;
