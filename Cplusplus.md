@@ -55,4 +55,4 @@ int main(){
 //the result is 1 2 6 24 120
 //so k remains valid until the program ends
 ```
-
+_*what is companion class?*_
