@@ -18,7 +18,7 @@ srand(time(NULL))
 [How to return multiple values in C++?](https://www.zhihu.com/question/57540006)  
 [Returning Multiple Values from Functions in C++](https://dzone.com/articles/returning-multiple-values-from-functions-in-c)
 
-### Print Unicode in C++  
+### _*Print Unicode in C++*_  
 
 _keyboard input in vim:_ ctrl+v u2190 can get a ←  
 ```C++
@@ -27,9 +27,32 @@ string u="\u2190";
 string u="←";
 cout<<u<<endl;
 ```
-
+### _*C++11 new feature*_  
+####constexpr  
 ```C++
-//C++11 new feature
 constexpr int N=5;
 int arr[N];
 ```
+#### static
+*static global variable*  
+if two files, in one file define static int a=5;then a is not visible even declare _*extern int a;*_  
+
+*static local variable*  
+```C++
+int factorial(int n){
+    static int k=1;
+    k=k*n;
+    return k;
+}
+
+int main(){
+    for(int i=1;i<=5;i++)
+    {
+        cout<<factorial(i)<<endl;
+    }
+    return 0;
+}
+//the result is 1 2 6 24 120
+//so k remains valid until the program ends
+```
+
