@@ -56,3 +56,4 @@ int main(){
 //so k remains valid until the program ends
 ```
 _*what is companion class?*_
+_*what is protected member in class?*_
