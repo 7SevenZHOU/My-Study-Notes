@@ -100,8 +100,7 @@ int main()
     for(int i=0;i<5;i++)
     {
         cout<<vals[i]<<endl;
-    }
-    
+    }    
     return 0;
 }
 ```
@@ -157,6 +156,9 @@ int *pi5=new int; //if allocation fails,new throws std::bad_alloc
 int *pi6=new (nothrow) int;//if allocation fails,new returns a null pointer
 
 ```
+
+The pointer we pass to delete must either point to dynamically allocated memory or be a null pointer.  
+Deleting a pointer to memory that was not allocated by new,or deleting the same pointer value more than once,is undefined  
 
 
 
