@@ -91,8 +91,7 @@ int main()
     for(int i=0;i<5;i++)
     {
         cout<<vals[i]<<endl;
-    }
-    
+    }a    
     setValue(0)=6;
     setValue(1)=7;
     //note! int r=setValue(2); will not work
@@ -151,7 +150,11 @@ auto pi3=new auto(pi2);
 
 //a pointer to a const, must initialize;
 const int *pi4=new const int(1024);
-const string *pcs=new const string; //implicit initialize
+const string *pcs=new const string; //implicit initialization
+
+//if allocation fails,new returns a null pointer
+int *pi5=new int; //if allocation fails,new throws std::bad_alloc
+int *pi6=new (nothrow) int;//if allocation fails,new returns a null pointer
 
 ```
 
