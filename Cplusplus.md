@@ -115,3 +115,24 @@ int& func() {
 ```
 ### initializer_list  
 [std::initializer_list](http://en.cppreference.com/w/cpp/utility/initializer_list)  
+
+### const
+class Student{
+public:
+    //getAge() can't modify any member variable
+	int getAge() const{
+        //age=20; //compile error
+		return age;
+	}
+    //return a const reference;
+    //const int& s=Stu.getScore(); otherwise compile error;
+	const int& getScore() const{
+		return score;
+	}
+
+	Student(int a=18,int s=0):age(a),score(s){}
+
+private:
+	int age;
+	int score;
+};
