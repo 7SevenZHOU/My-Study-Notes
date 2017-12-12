@@ -126,8 +126,8 @@ public:
         //age=20; //compile error
 		return age;
 	}
-    //return a const reference;
-    //const int& s=Stu.getScore(); otherwise compile error;
+    //return a const reference
+    //const int& s=Stu.getScore(); otherwise compile error
 	const int& getScore() const{
 		return score;
 	}
@@ -139,3 +139,23 @@ private:
 	int score;
 };
 ```
+```C++
+string *ps1=new string; //default initialized to empty string
+string *ps2=new string(); //value initialized to empty string
+int *pi1=new int; //default initialized to a undefined int,*pi1 is undefined
+int *pi2=new int(); //value initialized to 0,*pi2=0
+string *ps=new string(10,'9'); //*ps is "9999999999"
+vector<int> *pv=new vector<int>{0,1,2,3,4,5,6,7,8,9};
+
+auto pi3=new auto(pi2);
+
+//a pointer to a const, must initialize;
+const int *pi4=new const int(1024);
+const string *pcs=new const string; //implicit initialize
+
+```
+
+
+
+
+
