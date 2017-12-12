@@ -57,4 +57,13 @@ int main(){
 ```
 _*what is companion class?*_
 _*what is protected member in class?*_  
-_*stl list?*_
+_*stl list?*_  
+
+_*typedef*_ alias  
+```C++
+typedef unsigned long ulong;
+unsigned long l1;
+ulong l2;
+```
+
+
