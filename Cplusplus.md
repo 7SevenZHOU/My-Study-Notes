@@ -104,3 +104,11 @@ int main()
     return 0;
 }
 ```
+```C++
+int& func() {
+   int q;
+   //! return q; // Compile time error
+   static int x;
+   return x;     // Safe, x lives outside this scope
+}
+```
