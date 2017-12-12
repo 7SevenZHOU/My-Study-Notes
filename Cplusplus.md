@@ -65,5 +65,8 @@ typedef unsigned long ulong;
 unsigned long l1;
 ulong l2;
 ```
-
+_string::size_type_ guarantees just that. It is a type that is big enough to represent the size of a string, no matter how big that string is.  
+```C++
+std::string::size_type len=myString.size();
+```
 
