@@ -69,4 +69,23 @@ _string::size_type_ guarantees just that. It is a type that is big enough to rep
 ```C++
 std::string::size_type len=myString.size();
 ```
+### Returning values by reference in C++  
+[Returning values by reference in C++](https://www.tutorialspoint.com/cplusplus/returning_values_by_reference.htm)
 
+```C++
+int vals[]={1,2,3,4,5};
+int& setValue(int i){
+    return vals[i];}
+for(int i=0;i<5;i++)
+{
+    cout<<vals[i]<<endl;
+}
+
+setValue(0)=6;
+setValue(1)=7;
+
+for(int i=0;i<5;i++)
+{
+    cout<<vals[i]<<endl;
+}
+```
