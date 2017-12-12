@@ -73,19 +73,34 @@ std::string::size_type len=myString.size();
 [Returning values by reference in C++](https://www.tutorialspoint.com/cplusplus/returning_values_by_reference.htm)
 
 ```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
 int vals[]={1,2,3,4,5};
+
 int& setValue(int i){
-    return vals[i];}
-for(int i=0;i<5;i++)
-{
-    cout<<vals[i]<<endl;
+    return vals[i];
 }
 
-setValue(0)=6;
-setValue(1)=7;
 
-for(int i=0;i<5;i++)
+int main()
 {
-    cout<<vals[i]<<endl;
+    for(int i=0;i<5;i++)
+    {
+        cout<<vals[i]<<endl;
+    }
+    
+    setValue(0)=6;
+    setValue(1)=7;
+    //note! int r=setValue(2); will not work
+    int &r=setValue(2);
+    r=8;
+    for(int i=0;i<5;i++)
+    {
+        cout<<vals[i]<<endl;
+    }
+    
+    return 0;
 }
 ```
