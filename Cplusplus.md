@@ -56,6 +56,7 @@ int main(){
 //so k remains valid until the program ends
 ```
 _*what is companion class?*_
+
 _*what is protected member in class?*_  
 _*stl list?*_  
 
@@ -112,3 +113,5 @@ int& func() {
    return x;     // Safe, x lives outside this scope
 }
 ```
+### initializer_list  
+[std::initializer_list](http://en.cppreference.com/w/cpp/utility/initializer_list)  
