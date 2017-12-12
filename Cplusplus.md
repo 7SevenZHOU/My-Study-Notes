@@ -67,6 +67,7 @@ unsigned long l1;
 ulong l2;
 ```
 _string::size_type_ guarantees just that. It is a type that is big enough to represent the size of a string, no matter how big that string is.  
+
 ```C++
 std::string::size_type len=myString.size();
 ```
@@ -117,6 +118,7 @@ int& func() {
 [std::initializer_list](http://en.cppreference.com/w/cpp/utility/initializer_list)  
 
 ### const
+```C++
 class Student{
 public:
     //getAge() can't modify any member variable
@@ -136,3 +138,4 @@ private:
 	int age;
 	int score;
 };
+```
