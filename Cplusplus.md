@@ -91,7 +91,8 @@ int main()
     for(int i=0;i<5;i++)
     {
         cout<<vals[i]<<endl;
-    }a    
+
+}    
     setValue(0)=6;
     setValue(1)=7;
     //note! int r=setValue(2); will not work
@@ -140,6 +141,8 @@ private:
 ```C++
 string *ps1=new string; //default initialized to empty string
 string *ps2=new string(); //value initialized to empty string
+int *p(new int(20));
+
 int *pi1=new int; //default initialized to a undefined int,*pi1 is undefined
 int *pi2=new int(); //value initialized to 0,*pi2=0
 string *ps=new string(10,'9'); //*ps is "9999999999"
