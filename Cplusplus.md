@@ -209,7 +209,27 @@ for ( n=0, i=100 ; n!=i ; ++n, --i )
    // whatever here...
 }
 ```
+```C++
+int main ()
+{
+  int n=10;
+mylabel:
+  cout << n << ", ";
+  n--;
+  if (n>0) goto mylabel;
+  cout << "liftoff!\n";
+}
 
+switch (x) {
+  case 1:
+  case 2:
+  case 3:
+    cout << "x is 1, 2 or 3";
+    break;
+  default:
+    cout << "x is not 1, 2 nor 3";
+  }
+```
 
 
 
