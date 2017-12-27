@@ -172,6 +172,12 @@ int main ()
     getline (cin,str);
     cout << "You entered: " << str << '\n';
   } while (str != "goodbye");
+  
+  string str1 {"Hello!"};
+  for (char c : str1)
+  {
+    cout<< c <<endl;
+  }
 }
 ```
 ```C++
