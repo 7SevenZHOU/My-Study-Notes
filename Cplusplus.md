@@ -179,6 +179,29 @@ int main ()
     cout<< c <<endl;
   }
 }
+
+int main ()
+{
+  for (int n=10; n>0; n--)
+  {
+    cout << n << ", ";
+    if (n==3)
+    {
+      cout << "countdown aborted!";
+      break;
+    }
+  }
+}
+
+int main ()
+{
+  for (int n=10; n>0; n--) {
+    if (n==5) continue;
+    cout << n << ", ";
+  }
+  cout << "liftoff!\n";
+}
+
 ```
 ```C++
 for ( n=0, i=100 ; n!=i ; ++n, --i )
