@@ -16,4 +16,8 @@ w2.o:w2.cpp
 w3.o:w3.cpp
     g++ -c -o w3.o w3.cpp
 ```
-
+```
+clean:
+    -rm -f test *.o
+```
+make clean  
