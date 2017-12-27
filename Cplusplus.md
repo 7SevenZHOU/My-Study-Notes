@@ -163,6 +163,23 @@ int *pi6=new (nothrow) int;//if allocation fails,new returns a null pointer
 The pointer we pass to delete must either point to dynamically allocated memory or be a null pointer.  
 Deleting a pointer to memory that was not allocated by new,or deleting the same pointer value more than once,is undefined  
 
+```C++
+int main ()
+{
+  string str;
+  do {
+    cout << "Enter text: ";
+    getline (cin,str);
+    cout << "You entered: " << str << '\n';
+  } while (str != "goodbye");
+}
+```
+```C++
+for ( n=0, i=100 ; n!=i ; ++n, --i )
+{
+   // whatever here...
+}
+```
 
 
 
