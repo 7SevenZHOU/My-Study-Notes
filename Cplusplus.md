@@ -254,6 +254,38 @@ int main(void)
     return 0;
 }
 ```
+```C++
+#include <iostream>
 
+
+class aClass
+{
+public:
+    void aTest(int a, int b)
+    {
+        printf("%d+%d=%d",a,b,a+b);
+    }
+};
+
+void function1(void (*function)(int,int))
+{
+    function(1,1);
+}
+
+void test(int a,int b)
+{
+    printf("%d-%d=%d",a,b,a-b);
+}
+
+int main (int argc, const char * argv[])
+{
+    aClass a();
+
+    function1(&test);
+    function1(&aClass::aTest ); // <-- how should I point to a's aClass::test function?
+
+    return 0;
+}
+```
 
 
