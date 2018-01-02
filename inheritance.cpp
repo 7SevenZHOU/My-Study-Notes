@@ -94,3 +94,42 @@ int main(){
     delete p;
     return 0;
 }
+
+/*
+
+#include<iostream>
+
+class D{
+public:
+    D(){std::cout<<"Hello D"<<std::endl;}
+    ~D(){std::cout<<"Bye D"<<std::endl;}
+};
+
+class B:virtual public D{
+public:    
+    B(){std::cout<<"Hello B"<<std::endl;}
+    ~B(){std::cout<<"Bye B"<<std::endl;}
+};
+
+class C:virtual public D{
+public:
+    C(){std::cout<<"Hello C"<<std::endl;}
+    ~C(){std::cout<<"Bye C"<<std::endl;}
+};
+
+class A:public B,public C{
+public:
+    A(){std::cout<<"Hello A"<<std::endl;}
+    ~A(){std::cout<<"Bye A"<<std::endl;}
+};
+
+
+int main(){
+    A a;
+    B b;
+    C c;
+    D d;
+    return 0;
+}
+
+*/
