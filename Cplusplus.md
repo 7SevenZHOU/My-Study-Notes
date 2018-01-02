@@ -293,3 +293,12 @@ int main (int argc, const char * argv[])
 ### virtual destuctor  
 when design a base class, we should use virutal destructor.  
 [when to use virtual destructor](https://www.zhihu.com/question/41538182)  
+
+### virtual inheritance
+```C++
+class D{};
+class A:virtual public D{};
+class B:virtual public D{};
+class C:public A,public B{};
+//if not virtual inheritance,will get two D instances when create C;
+```
