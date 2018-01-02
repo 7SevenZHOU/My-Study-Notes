@@ -290,3 +290,6 @@ int main (int argc, const char * argv[])
 # pure virtual function  
 [pure virtual function](https://www.geeksforgeeks.org/pure-virtual-functions-and-abstract-classes/)  
 
+### virtual destuctor  
+when design a base class, we should use virutal destructor.  
+[when to use virtual destructor](https://www.zhihu.com/question/41538182)  
