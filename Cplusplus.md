@@ -287,5 +287,6 @@ int main (int argc, const char * argv[])
     return 0;
 }
 ```
-
+# pure virtual function  
+[pure virtual function](https://www.geeksforgeeks.org/pure-virtual-functions-and-abstract-classes/)  
 
