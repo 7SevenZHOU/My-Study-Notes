@@ -303,7 +303,7 @@ class C:public A,public B{};
 //if not virtual inheritance,will get two D instances when create C;
 ```
 友元关系没有继承性和传递性  
-static member and friend class  
+## static member and friend class  
 ```c++
 #include<iostream>
 
