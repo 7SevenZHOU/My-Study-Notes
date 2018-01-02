@@ -303,3 +303,65 @@ class C:public A,public B{};
 //if not virtual inheritance,will get two D instances when create C;
 ```
 友元关系没有继承性和传递性  
+static member and friend class  
+```c++
+#include<iostream>
+
+class Dog{
+public:
+    friend class Cat;
+    Dog(int a):age(a){}
+    static void run(){
+        std::cout<<"Dog run!"<<std::endl;
+    }
+    void setLength(int n){
+        length=n;
+    }
+    static int length;
+private:
+    void bark(){std::cout<<"bark!"<<std::endl;}
+    int age;
+};
+
+int Dog::length=20; //must initialize outside the class.
+
+class Cat{
+public:
+    Cat(){}
+    void meow(Dog a){
+        std::cout<<a.age<<std::endl;
+        a.bark();
+        std::cout<<"Dog length:"<<a.length<<std::endl<<std::endl;
+    }
+private:
+
+};
+
+int factorial(int n){
+    static int r=1;
+    r=r*n;
+    return r;
+}
+
+
+int main(){
+    Dog d(7);
+    d.run();
+    std::cout<<"Dog length: "<<Dog::length<<std::endl;
+    Dog::run();
+    Cat c;
+    c.meow(d);
+    d.setLength(30);
+    c.meow(d);
+    Dog e(8);
+    c.meow(e);
+    e.length=40;
+    c.meow(e);
+    for(int i=1;i<7;i++){
+        std::cout<<factorial(i)<<std::endl;
+    }
+
+
+    return 0;
+}
+```
