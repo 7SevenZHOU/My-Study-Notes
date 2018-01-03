@@ -6,3 +6,4 @@ source ~/tensorflow/bin/activate
 pip3 install ipykernel
 
 python3 -m ipykernel install --user=tensorflow
+```
