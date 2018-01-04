@@ -1,2 +1,2 @@
-ctags -R
-ctrl-f ctrl-b =pageUp pageDown
+ctags -R  
+ctrl-b ctrl-f =pageUp pageDown
