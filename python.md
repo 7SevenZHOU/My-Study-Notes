@@ -15,3 +15,35 @@ def fab(n):
         a,b=b,a+b
     return b
 ```
+
+## delete element when use for iterator  
+```python
+def getMaxAverage(a):
+    maxA=0
+    while a:
+        k=a[0]
+        total=0
+        count=0
+        for x in a[:]:
+            if x[0]==k[0]:
+                total=total+x[1]
+                count=count+1
+                a.remove(x)
+        total=total/count
+        if total>maxA:
+            maxA=total
+            print("%d\n"%maxA)
+        print(a)
+    return maxA
+
+
+student=[["A",-20],["B",30],["C",40],["D",70],["B",120],["A",140],["C",170],["C",200],["E",300]]
+
+print(getMaxAverage(student))
+
+b=[1,2,3,4,5,6,7]
+for item in b[:]:
+    b.remove(item)
+    print(b)
+```
+[reference](http://www.cnblogs.com/bananaplan/p/remove-listitem-while-iterating.html)
