@@ -381,3 +381,16 @@ int main()
     std::cout << Something::getValue() << '\n';
 }
 ```
+std::vector::size() returns a unsigned number,so it is better to convert it to integer when use in loop  
+in c++11:  
+```c++
+for (auto iter = myVec.begin(); iter != myVec.end(); ++iter)
+{
+    int i = *iter;
+}
+
+for (auto i : myVec)
+{
+}
+```
+
