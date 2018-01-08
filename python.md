@@ -55,3 +55,20 @@ for item in b[:]:
   newlist=copy.copy(old_list)  
 4.newlist=copy.deepcopy(old_list)11111111111111  
 [*Reference*](https://stackoverflow.com/questions/2612802/how-to-clone-or-copy-a-list)
+
+random sample from list  
+```python
+import random
+a=[1,2,4,6,8,11,13]
+b=random.sample(a,3)
+```
+#### how to use readlines() multiple times
+```
+with open(filename) as f:
+    for r in f.readlines():
+        #do some work
+    f.seek(0)
+    for r in f.readlines():
+        continue do some work
+```
+
