@@ -394,7 +394,8 @@ for (auto i : myVec)
 }
 ```
 #### ascii operation  
-```c++class Solution {
+```c++
+class Solution {
 public:
     int titleToNumber(string s) {
         int ans=0;
