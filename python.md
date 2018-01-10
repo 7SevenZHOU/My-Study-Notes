@@ -125,6 +125,13 @@ for n in prime():
     else:
         break
 ```
-
+```
+>>> nums = range(2, 50) 
+>>> for i in range(2, 8): 
+...     nums = filter(lambda x: x == i or x % i, nums)
+... 
+>>> print nums
+[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
+```
 
 
