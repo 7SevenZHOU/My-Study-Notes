@@ -98,3 +98,33 @@ def str2int(s):
     return reduce(lambda x, y: x * 10 + y, map(char2num, s))
 ```
 
+```python
+def g_odd():
+    n=1
+    while True:
+        n+=2
+        yield n
+        
+
+def not_divide(n):
+    return lambda x:x%n>0
+    
+
+def prime():
+    yield 2
+    it=g_odd()
+    while True:
+        n=next(it)
+        yield n
+        it=filter(not_divide(n),it)
+    
+
+for n in prime():
+    if n<1000:
+        print(n)
+    else:
+        break
+```
+
+
+
