@@ -406,4 +406,22 @@ public:
     }
 };
 ```
-
+### unordered_map  
+```C++
+class Solution {
+public:
+    vector<int> anagramMappings(vector<int>& A, vector<int>& B) {
+        vector<int> ans;
+        unordered_map<int,int> m;
+        for(int i=0;i<B.size();i++){
+            m[B[i]]=i;
+        }
+        for(int i=0;i<A.size();i++){
+            A[i]=m.find(A[i])->second;
+            //auto p=m.find(A[i]);
+	    //a[i]=p->second;
+        }
+        return A;
+    }
+};
+```
