@@ -72,3 +72,6 @@ with open(filename) as f:
         continue do some work
 ```
 
+##lambda function  
+[*lambda function*](http://www.secnetix.de/olli/Python/lambda_functions.hawk)  
+
