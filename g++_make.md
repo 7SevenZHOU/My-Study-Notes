@@ -21,3 +21,11 @@ clean:
     -rm -f test *.o
 ```
 make clean  
+```
+cat.h dog.h cat.cpp dog.cpp main.cpp
+g++ -c cat.cpp  
+g++ -c dog.cpp
+ar -crv libcat.a cat.o
+ar -crv libdog.a dog.o
+g++ main.cpp -L ./ {-lcat,-ldog}
+```
