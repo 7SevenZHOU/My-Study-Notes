@@ -21,6 +21,8 @@ clean:
     -rm -f test *.o
 ```
 make clean  
+### g++ compile use static library  
+
 ```
 cat.h dog.h cat.cpp dog.cpp main.cpp
 g++ -c cat.cpp  
