@@ -7,3 +7,5 @@ mv oldname newname
 
 ### check resource usage  
 *top* *free -m*  
+### copy and paste  
+ctrl+shift+c ctrl+shift+v
