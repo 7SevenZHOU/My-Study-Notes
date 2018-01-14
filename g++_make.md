@@ -31,8 +31,8 @@ ar -crv libcat.a cat.o
 ar -crv libdog.a dog.o
 g++ main.cpp -L ./ {-lcat,-ldog}
 ```
-###makefile without library dependency  
-```
+### makefile without library dependency  
+```makefile
 all:createDog.out clean
 
 createDog.out:createDog.o cat.o dog.o
