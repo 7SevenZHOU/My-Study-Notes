@@ -10,4 +10,5 @@ mv oldname newname
 ### copy and paste  
 ctrl+shift+c ctrl+shift+v  
 ### cat and copy 
-cat Yourfile | xsel -b
+cat Yourfile | xsel -b  
+xsel -b < Yourfile
