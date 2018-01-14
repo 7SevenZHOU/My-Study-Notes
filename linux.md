@@ -8,4 +8,6 @@ mv oldname newname
 ### check resource usage  
 *top* *free -m*  
 ### copy and paste  
-ctrl+shift+c ctrl+shift+v
+ctrl+shift+c ctrl+shift+v  
+### cat and copy 
+cat Yourfile | xsel -b
