@@ -50,3 +50,23 @@ createDog.o:createDog.cpp
 clean:
 	rm -f *o
 ```
+```makefile
+CC=g++
+CPPFLAGS=-c -Wall
+LDFLAGS=
+SOURCES=createDog.cpp cat.cpp dog.cpp
+OBJECTS=$(SOURCES:.cpp=.o)
+EXECUTABLE=createDog.out
+
+all:$(SOURCES) $(EXECUTABLE) clean
+
+$(EXECUTABLE):$(OBJECTS)
+	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
+
+.cpp.o:
+	$(CC) $(CPPFLAGS) $< -o $@
+
+clean:
+	rm *o
+
+```
