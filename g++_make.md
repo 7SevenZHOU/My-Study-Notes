@@ -48,5 +48,5 @@ createDog.o:createDog.cpp
 	g++ -c createDog.cpp
 
 clean:
-	rm -f *o createDog.out
+	rm -f *o
 ```
