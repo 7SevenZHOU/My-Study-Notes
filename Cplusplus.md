@@ -424,6 +424,21 @@ public:
         return A;
     }
 };
+
+    bool containsNearbyDuplicate(vector<int>& nums, int k) {
+        unordered_map<int,int> m;
+        for(int i=0;i<nums.size();i++)
+        {
+            if(!m.count(nums[i])) //count usage!
+                m[nums[i]]=i;
+            else if(abs(i-m[nums[i]])>k)
+                m[nums[i]]=i;
+            else
+                return true;
+        }
+        return false;   
+    }
+
 ```
 
 ### unordered_set
