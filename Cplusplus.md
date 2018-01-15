@@ -480,4 +480,10 @@ string reverseStr(string s, int k) {
         return s;
     }
 ```
+#### implicit invert from char to int
+```C++
+char A='a';
+int B=A;
+std::cout<<"B: "<<B<<std::endl;
+```
 
