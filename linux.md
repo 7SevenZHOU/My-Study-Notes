@@ -11,4 +11,5 @@ mv oldname newname
 ctrl+shift+c ctrl+shift+v  
 ### cat and copy 
 cat Yourfile | xsel -b  
-xsel -b < Yourfile
+xsel -b < Yourfile  
+### Copying Directory Trees with cp -r
