@@ -485,5 +485,7 @@ string reverseStr(string s, int k) {
 char A='a';
 int B=A;
 std::cout<<"B: "<<B<<std::endl;
+int C[256]={0};
+C[A]=1;
 ```
 
