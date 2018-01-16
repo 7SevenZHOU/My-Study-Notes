@@ -138,3 +138,15 @@ for n in prime():
 3**2=9
 4**3=64
 ```
+### matplotlib  
+```python
+plt.contourf(x,y,Z, 50, alpha=0.5, cmap=plt.get_cmap('jet'))
+plt.plot([-188.4], [2.67], 'x', ms=12, markeredgewidth=3, color='orange')
+plt.plot(b_history, w_history, 'o-', ms=3, lw=1.5, color='black')
+plt.xlim(-200,-100)
+plt.ylim(-5,5)
+plt.xlabel(r'$b$', fontsize=16)
+plt.ylabel(r'$w$', fontsize=16)
+plt.show()
+```
+
