@@ -488,4 +488,12 @@ std::cout<<"B: "<<B<<std::endl;
 int C[256]={0};
 C[A]=1;
 ```
+#### vector  
+```C++
+vector<int> fun1(){
+    return {1,2};
+    //or
+    return vector<int> {1,2};
+    }
+```
 
