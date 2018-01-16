@@ -506,5 +506,10 @@ vector<string> readBinaryWatch(int num) {
             rs.emplace_back(to_string(h) + (m < 10 ? ":0" : ":") + to_string(m));
     return rs;
 }
+/*For objects that add classes to a container, emplace_back avoids copying and moving operations of additional classes compared to push_back.
+
+“Emplace_back avoids the extra copy or move operation required when using push_back.”
+
+See: http://en.cppreference.com/w/cpp/container/vector/emplace_back*/
 ```
 
