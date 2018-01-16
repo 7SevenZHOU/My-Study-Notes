@@ -510,6 +510,9 @@ vector<string> readBinaryWatch(int num) {
 
 “Emplace_back avoids the extra copy or move operation required when using push_back.”
 
-See: http://en.cppreference.com/w/cpp/container/vector/emplace_back*/
+See: http://en.cppreference.com/w/cpp/container/vector/emplace_back
+https://www.codeday.top/2017/07/11/28790.html
+*/
+
 ```
 
