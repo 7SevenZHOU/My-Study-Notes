@@ -513,6 +513,6 @@ vector<string> readBinaryWatch(int num) {
 See: http://en.cppreference.com/w/cpp/container/vector/emplace_back
 https://www.codeday.top/2017/07/11/28790.html
 */
-
 ```
+*A void pointer can point to objects of any data type*
 
