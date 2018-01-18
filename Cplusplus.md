@@ -16,7 +16,21 @@ srand(time(NULL))
 ### _*How to return multiple values in C++:*_  
 
 [How to return multiple values in C++?](https://www.zhihu.com/question/57540006)  
-[Returning Multiple Values from Functions in C++](https://dzone.com/articles/returning-multiple-values-from-functions-in-c)
+[Returning Multiple Values from Functions in C++](https://dzone.com/articles/returning-multiple-values-from-functions-in-c)  
+
+```C++
+//c++17  Structrued binding
+auto fun(){
+return tuple(1,'c');}
+auto[a,b]=fun();
+
+//c++14
+std::tuple<int,char> fun(){
+return std::make_tuple(1,'c');}
+auto t=fun();
+int a=std::get<0>(t);
+char b=std::get<1>(t);
+```
 
 ### _*Print Unicode in C++*_  
 
