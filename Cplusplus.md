@@ -530,3 +530,30 @@ https://www.codeday.top/2017/07/11/28790.html
 ```
 *A void pointer can point to objects of any data type*
 
+### handle exceptions  
+```C++
+#include <iostream>
+using namespace std;
+
+double division(int a, int b) {
+   if( b == 0 ) {
+      throw "Division by zero condition!";
+   }
+   return (a/b);
+}
+
+int main () {
+   int x = 50;
+   int y = 0;
+   double z = 0;
+ 
+   try {
+      z = division(x, y);
+      cout << z << endl;
+   } catch (const char* msg) {
+     cerr << msg << endl;
+   }
+
+   return 0;
+}
+```
