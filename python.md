@@ -149,4 +149,5 @@ plt.xlabel(r'$b$', fontsize=16)
 plt.ylabel(r'$w$', fontsize=16)
 plt.show()
 ```
-
+### integer division  
+in python3 //(floor division) /(true division)  
