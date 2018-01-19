@@ -17,3 +17,7 @@ xsel -b < Yourfile
 ## _*ImageMagick*_ a powerful image tool in linux!  
 dispaly img.jpg  
 shortcut for quit: q  
+
+# Git  
+### change commit after push  
+[change commit after push](http://xyz.cinc.biz/2016/07/git-edit-commit-message-after-push.html)
