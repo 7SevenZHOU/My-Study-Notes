@@ -20,4 +20,4 @@ shortcut for quit: q
 
 # Git  
 ### change commit after push  
-[change commit after push](http://xyz.cinc.biz/2016/07/git-edit-commit-message-after-push.html)
+[change commit after push](https://stackoverflow.com/questions/8981194/changing-git-commit-message-after-push-given-that-no-one-pulled-from-remote)
