@@ -13,3 +13,7 @@ ctrl+shift+c ctrl+shift+v
 cat Yourfile | xsel -b  
 xsel -b < Yourfile  
 ### Copying Directory Trees with cp -r
+
+## _*ImageMagick*_ a powerful image tool in linux!  
+dispaly img.jpg  
+shortcut for quit: q  
