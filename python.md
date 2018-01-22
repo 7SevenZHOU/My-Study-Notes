@@ -151,3 +151,11 @@ plt.show()
 ```
 ### integer division  
 in python3 //(floor division) /(true division)  
+
+### add virtualenv support in jupyter notebook  
+```
+sudo pip3 install -U jupyter
+sudo pip3 install ipykernel
+python3 -m ipykernel install --user --name=tensorflow
+```
+
