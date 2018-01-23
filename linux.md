@@ -21,3 +21,6 @@ shortcut for quit: q
 # Git  
 ### change commit after push  
 [change commit after push](https://stackoverflow.com/questions/8981194/changing-git-commit-message-after-push-given-that-no-one-pulled-from-remote)
+
+### ssh via unnormal port  
+git clone ssh://git@10.137.20.113:2222/root/test.git  
