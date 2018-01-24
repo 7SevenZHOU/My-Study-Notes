@@ -9,6 +9,7 @@ pip install shadowsocks
 ```
 sudo vim /etc/shadowsocks.json
 ```
+```
 {
 "server":"0.0.0.0",
 "server_port":xxxx, //any large number i.e 8998
