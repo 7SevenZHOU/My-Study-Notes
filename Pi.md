@@ -32,4 +32,7 @@ add one line
 ```
 sudo ssserver -c /etc/shadowsocks.json -d start
 ```
-
+*show statitics*
+```
+sudo netstat -anp | grep python
+```
