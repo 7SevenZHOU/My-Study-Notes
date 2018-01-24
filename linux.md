@@ -33,3 +33,7 @@ scp /path/to/file username@a:/path/to/destination
 //To copy a file from B to A while logged into A:
 scp username@b:/path/to/file /path/to/destination
 ```
+### check the file size in a directory
+```
+ls -lh
+```
