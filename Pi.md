@@ -7,6 +7,7 @@ apt-get install python-pip python-m2crypto
 pip install shadowsocks
 ```
 ```
+*2.config*  
 sudo vim /etc/shadowsocks.json
 ```
 ```
@@ -22,3 +23,12 @@ sudo vim /etc/shadowsocks.json
 "workers":1
 }
 ```
+*3.start at boot*  
+```
+sudo vim /etc/rc.local
+```
+add one line
+```
+sudo ssserver -c /etc/shadowsocks.json -d start
+```
+
