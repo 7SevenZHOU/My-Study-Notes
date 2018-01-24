@@ -6,8 +6,9 @@ _operating system:raspberry 3B,debian 9(Linux 4.9)_
 apt-get install python-pip python-m2crypto
 pip install shadowsocks
 ```
-```
+
 *2.config*  
+```
 sudo vim /etc/shadowsocks.json
 ```
 ```
