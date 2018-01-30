@@ -160,6 +160,7 @@ python3 -m ipykernel install --user --name=tensorflow
 ```
 
 ## argparse
+[Argparse Tutorial](https://docs.python.org/3/howto/argparse.html)
 ```python3
 import argparse
 parser = argparse.ArgumentParser()
