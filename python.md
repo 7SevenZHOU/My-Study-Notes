@@ -175,3 +175,8 @@ if args.verbose:
 else:
     print(answer)
 ```
+```python
+a = 1  
+print(a.__class__)  
+print(issubclass(a.__class__, object))
+```
