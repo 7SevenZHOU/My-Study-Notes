@@ -38,8 +38,8 @@ scp username@b:/path/to/file /path/to/destination
 ls -lh
 ```
 ## startup script  
-[1](http://blog.pzxbc.com/2016/03/08/raspberrypi-debian-startup-script-config/)
-[2](https://wiki.debian.org/LSBInitScripts)
+[1](http://blog.pzxbc.com/2016/03/08/raspberrypi-debian-startup-script-config/)  
+[2](https://wiki.debian.org/LSBInitScripts)  
 
 ```
 #!/bin/sh
