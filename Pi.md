@@ -37,6 +37,6 @@ sudo ssserver -c /etc/shadowsocks.json -d start
 sudo netstat -anp | grep python
 ```
 *4.fix bugs*  
-[openssl bug](https://blog.lyz810.com/article/2016/09/shadowsocks-with-openssl-greater-than-110/)
-*5.bbr*
-[config bbr](https://github.com/iMeiji/shadowsocks_install/wiki/%E5%BC%80%E5%90%AFTCP-BBR%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95)
+[openssl bug](https://blog.lyz810.com/article/2016/09/shadowsocks-with-openssl-greater-than-110/)  
+*5.bbr*  
+[config bbr](https://github.com/iMeiji/shadowsocks_install/wiki/%E5%BC%80%E5%90%AFTCP-BBR%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95)  
