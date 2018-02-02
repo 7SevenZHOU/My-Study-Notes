@@ -73,3 +73,26 @@ do
 	$SLEEP 60
 done
 ```
+### crontab  
+```
+crontab -e 
+*/2 * * * * sudo /bin/sh /var/eth0
+```
+```
+#!/bin/sh
+VAR="/var/log/eth0.log"
+SLEEP="/bin/sleep"
+PING="/bin/ping"
+
+var=$(/bin/date "+%Y-%m-%d %H:%M:%S")
+$PING -c 1 192.168.3.1 > /dev/null 2>&1
+if [ $? -eq 0 ]
+then
+	echo "${var}   Network OK!" >> ${VAR}
+else
+	echo "${var}   Network Broken! Restart" >> ${VAR}
+	/usr/bin/sudo ifconfig eth0 down && sudo ifconfig eth0 up
+	/usr/bin/sudo /etc/init.d/networking restart
+	/usr/bin/sudo dhclient eth0
+fi
+```
