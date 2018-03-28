@@ -98,3 +98,4 @@ fi
 ```
 ls -I "*.txt" -I "*.pdf"  
 ls | wc -l
+du -sh ./
