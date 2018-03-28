@@ -97,5 +97,5 @@ else
 fi
 ```
 ls -I "*.txt" -I "*.pdf"  
-ls | wc -l
+ls | wc -l  
 du -sh ./
