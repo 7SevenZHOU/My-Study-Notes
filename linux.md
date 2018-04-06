@@ -96,6 +96,8 @@ else
 	/usr/bin/sudo dhclient eth0
 fi
 ```
-ls -I "*.txt" -I "*.pdf"  
+```
+ls -I "*.jpg" -I "*.svg" 
 ls | wc -l  
 du -sh ./
+```
