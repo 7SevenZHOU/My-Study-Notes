@@ -101,3 +101,6 @@ ls -I "*.jpg" -I "*.svg"
 ls | wc -l  
 du -sh ./
 ```
+```
+ls [ape]* ls files headed with a,p,e  
+```
