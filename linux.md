@@ -105,4 +105,6 @@ du -sh ./
 ls [ape]* ls files headed with a,p,e  
 ```
 ```
-sort. ctrl-D end input.
+sort. ctrl-D end input.  
+sort <in >out
+```
