@@ -197,3 +197,13 @@ print(issubclass(a.__class__, object))
 >>>print(b.shape)
 (4,1,2,3)
 ```
+```python
+$ cat 2.py
+def k(**argv):
+    print argv
+
+k(a=10, b = 20)
+
+$ python 2.py
+{'a': 10, 'b': 20}
+```
