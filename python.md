@@ -186,9 +186,14 @@ print(issubclass(a.__class__, object))
 >>> def functionA(*a, **kw):
        print(a)
        print(kw)
-
-
+       
 >>> functionA(1, 2, 3, 4, 5, 6, a=2, b=3, c=5)
 (1, 2, 3, 4, 5, 6)
 {'a': 2, 'c': 5, 'b': 3}
+
+>>>import numpy as np
+>>>a=(1,2,3)
+>>>b=np.zeros((4,*a))
+>>>print(b.shape)
+(4,1,2,3)
 ```
