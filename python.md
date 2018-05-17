@@ -180,3 +180,15 @@ a = 1
 print(a.__class__)  
 print(issubclass(a.__class__, object))
 ```
+
+
+```python
+>>> def functionA(*a, **kw):
+       print(a)
+       print(kw)
+
+
+>>> functionA(1, 2, 3, 4, 5, 6, a=2, b=3, c=5)
+(1, 2, 3, 4, 5, 6)
+{'a': 2, 'c': 5, 'b': 3}
+```
