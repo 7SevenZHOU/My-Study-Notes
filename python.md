@@ -207,3 +207,7 @@ k(a=10, b = 20)
 $ python 2.py
 {'a': 10, 'b': 20}
 ```
+```python
+isinstance(D,Dog)
+True
+```
