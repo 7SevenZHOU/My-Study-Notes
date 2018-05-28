@@ -211,5 +211,7 @@ $ python 2.py
 isinstance(D,Dog)
 True
 ```
+```
 >>> type((x for x in range(10)))==types.GeneratorType
 True
+```
