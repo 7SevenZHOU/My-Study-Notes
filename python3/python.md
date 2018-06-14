@@ -30,3 +30,16 @@ After nonlocal assignment: nonlocal spam
 After global assignment: nonlocal spam
 In global scope: global spam
 ```
+```
+with open("testfile.txt","w") as file:
+	file.write("Hello World\n") 
+	file.write("This is our new text file\n") 
+	file.write("and this is another line.\n") 
+	file.write("Why? Because we can.\n") 
+
+import json
+d={"one":1,"two":2}
+json.dump(d,open("./testfile2.txt","w"))
+
+d2 = json.load(open("./testfile2.txt"))
+```
