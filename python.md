@@ -227,3 +227,7 @@ for num in range(10,20):  #to iterate between 10 to 20
       print num, 'is a prime number'
       
   ```
+```python  
+import os.path
+dirs = [d for d in os.listdir('Tools') if os.path.isdir(os.path.join('Tools', d))]
+```
