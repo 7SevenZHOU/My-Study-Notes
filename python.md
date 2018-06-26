@@ -238,3 +238,13 @@ def timer(title):
     yield
     print("{} - done in {:.0f}s".format(title, time.time() - t0))
 ```
+*garbage collection*
+```python
+from sys import getrefcount
+a=[1,2,3]
+print(getrefcount(a))
+b=a
+print(getrefcount(b))
+>>>2
+   3
+```
