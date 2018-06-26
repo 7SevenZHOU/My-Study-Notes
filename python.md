@@ -247,4 +247,5 @@ b=a
 print(getrefcount(b))
 >>>2
    3
+   because getrefcount() will reference once so the output will be one larger than expectation
 ```
