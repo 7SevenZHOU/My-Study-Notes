@@ -231,3 +231,10 @@ for num in range(10,20):  #to iterate between 10 to 20
 import os.path
 dirs = [d for d in os.listdir('Tools') if os.path.isdir(os.path.join('Tools', d))]
 ```
+```python
+@contextmanager
+def timer(title):
+    t0 = time.time()
+    yield
+    print("{} - done in {:.0f}s".format(title, time.time() - t0))
+```
