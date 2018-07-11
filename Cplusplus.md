@@ -557,7 +557,7 @@ int main () {
    return 0;
 }
 ```
-#C++ class can include pointer member point to itself#   
+*C++ class can include pointer member point to itself*
 ```c++
 class Node {
     char *cargo;
