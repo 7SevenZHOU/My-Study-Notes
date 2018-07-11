@@ -557,3 +557,11 @@ int main () {
    return 0;
 }
 ```
+#C++ class can include pointer member point to itself#   
+```c++
+class Node {
+    char *cargo;
+    Node* left;   // I'm not a Node; I'm just a pointer to a Node
+    Node* right;  // Same here
+};
+```
