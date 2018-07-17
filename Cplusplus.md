@@ -565,3 +565,7 @@ class Node {
     Node* right;  // Same here
 };
 ```
+*Explicit Specifier*
+```c++
+Specifies that a constructor or conversion function (since C++11) is explicit, that is, it cannot be used for implicit conversions and copy-initialization.
+```
