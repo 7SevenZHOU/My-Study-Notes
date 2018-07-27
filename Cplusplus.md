@@ -569,3 +569,16 @@ class Node {
 ```c++
 Specifies that a constructor or conversion function (since C++11) is explicit, that is, it cannot be used for implicit conversions and copy-initialization.
 ```
+```c++
+#include <stdio.h>
+#include <algorithm> 
+bool cmp(int a, int b){
+	return a > b;
+}
+
+int main(void){
+	int a[8] = {5,43,1,7,8,13,0,74};
+	std::sort(a,a+10,cmp);//callback
+	return 0;
+}
+```
