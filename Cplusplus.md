@@ -595,3 +595,19 @@ void abssort(float* x, unsigned n) {
     );  
 }  
 ```
+```c++
+#include <iostream>
+#include <thread>
+
+struct functor {
+  void operator() (int a, int b) {
+    std::cout << a << "+" << b << "=" << a + b << std::endl;
+  }
+};
+
+int main()
+{
+  std::thread td(functor(), 1, 2); // 使用functor对象创建线程对象并传递参数1和2
+  td.join(); // 等待线程执行结束
+}
+```
