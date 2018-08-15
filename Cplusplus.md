@@ -611,3 +611,9 @@ int main()
   td.join(); // 等待线程执行结束
 }
 ```
+
+```c++
+char c[]="hello world!"
+std::cout<<sizeof(c)<<std::Endl;
+>>13
+```
