@@ -739,3 +739,13 @@ int main()
 
 }
 ```
+```c++
+class can have static member of itself
+class Test(){
+static Test self;
+};
+int main(){
+Test t;
+return 0;
+} //ok
+```
