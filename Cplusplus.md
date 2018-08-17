@@ -749,3 +749,5 @@ Test t;
 return 0;
 } //ok
 ```
+
+RAII: Resource acquisition is initialization  
