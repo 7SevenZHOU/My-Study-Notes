@@ -751,3 +751,4 @@ return 0;
 ```
 
 RAII: Resource acquisition is initialization  
+MVC,Observer Pattern  
