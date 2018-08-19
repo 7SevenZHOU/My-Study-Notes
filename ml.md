@@ -1,1 +1,2 @@
-Arcing is an acronym for Adaptive Reweighting and Combining.
+Arcing is an acronym for Adaptive Reweighting and Combining.  
+Gini loss
