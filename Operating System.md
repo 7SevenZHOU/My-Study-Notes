@@ -1,2 +1,3 @@
-LRU: least recently unused. 
+LRU: least recently unused.   
 PCB: process control block  
+TCB: thread control block  
