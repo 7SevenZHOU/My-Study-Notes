@@ -752,3 +752,5 @@ return 0;
 
 RAII: Resource acquisition is initialization  
 MVC,Observer Pattern  
+
+virtual function: dynamic binding,static binding(without virtual declaration)  
