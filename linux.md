@@ -112,3 +112,7 @@ sort <in >out
 ```
 export PYTHONPATH=$PYTHONPATH:$PWD:$PWD/slim
 ```
+export usage  
+```
+https://www.tutorialspoint.com/unix_commands/export.htm
+```
