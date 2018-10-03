@@ -70,3 +70,6 @@ clean:
 	rm *o
 
 ```
+```
+g++ python.cpp -I /usr/include/python3.6m -lpython3.6m
+```
