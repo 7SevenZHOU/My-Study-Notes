@@ -73,3 +73,7 @@ clean:
 ```
 g++ python.cpp -I /usr/include/python3.6m -lpython3.6m
 ```
+```
+jupyter notebook --no-browser --port=[XXXX]
+ssh -f [USER]@[SERVER] -L [YYYY]:localhost:[XXXX] -N
+localhost:[YYYY]
