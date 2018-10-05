@@ -8,3 +8,6 @@ git branch -a
 git fetch
 git log <remote-branch>
 ```
+```
+git log origin/master
+```
