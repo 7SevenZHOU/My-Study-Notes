@@ -791,4 +791,12 @@ int _tmain(int argc, _TCHAR* argv[])
 	d.a=10;
 	d.printA();
 }
+
+
+
+class istream : virtual public ios{...};
+class ostream : virtual public ios{...};
+class iostream : public istream, public ostream{...};
+
+
 ```
