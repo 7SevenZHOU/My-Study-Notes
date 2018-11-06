@@ -763,3 +763,32 @@ array of funtions:[https://stackoverflow.com/questions/5309859/how-to-define-an-
 #include <thread>
 std::this_thread::sleep_for(std::chrono::milliseconds(x));
 ```
+```c++
+class A
+{
+public:
+	A():a(1){};
+	void printA(){cout<<a<<endl;}
+	int a;
+};
+ 
+class B : virtual public A
+{
+};
+ 
+class C : virtual public A
+{
+};
+ 
+class D:  public B ,  public C
+{
+};
+ 
+int _tmain(int argc, _TCHAR* argv[])
+{
+	D d;
+	cout<<sizeof(d);
+	d.a=10;
+	d.printA();
+}
+```
