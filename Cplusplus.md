@@ -756,4 +756,10 @@ MVC,Observer Pattern
 virtual function: dynamic binding,static binding(without virtual declaration)  
 polymorphic class  
 
-array of funtions:[https://stackoverflow.com/questions/5309859/how-to-define-an-array-of-functions-in-c]  
+array of funtions:[https://stackoverflow.com/questions/5309859/how-to-define-an-array-of-functions-in-c] 
+
+```c++
+#include <chrono>
+#include <thread>
+std::this_thread::sleep_for(std::chrono::milliseconds(x));
+```
