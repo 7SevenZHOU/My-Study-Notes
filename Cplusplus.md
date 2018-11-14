@@ -800,3 +800,4 @@ class iostream : public istream, public ostream{...};
 
 
 ```
+friend function can't be derived.
