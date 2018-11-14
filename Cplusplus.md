@@ -802,3 +802,4 @@ class iostream : public istream, public ostream{...};
 ```
 friend function can't be derived.  
 all member function and static member use(share) the same space.  
+static member and static member function can be derived.  
