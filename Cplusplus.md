@@ -925,3 +925,7 @@ void ImageCapturer::getImage(cv::Mat &img)
     img=cv::cvarrToMat(pImg);
 }
 ```
+```c++
+std::bind std::move std::forward
+using DefectObserver=std::function<void(LocalDefectInfo)>;
+```
