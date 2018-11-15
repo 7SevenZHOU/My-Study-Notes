@@ -803,3 +803,125 @@ class iostream : public istream, public ostream{...};
 friend function can't be derived.  
 all member function and static member use(share) the same space.  
 static member and static member function can be derived.  
+
+```c++
+#ifndef IMAGECAPTURER_H
+#define IMAGECAPTURER_H
+#include <mutex>
+#include <opencv2/opencv.hpp>
+#include <mil.h>
+#include<QObject>
+
+
+
+class ImageCapturer:public QObject
+{
+    Q_OBJECT
+public:
+    static ImageCapturer* GetInstance(); //singleton class
+
+    void init();//init the camera
+
+    void changeExposure(int t); // unit: us
+
+    int getWidth(); //get width of the captured image
+    int getHeight(); //get height of the caputred image
+
+    void getImage(cv::Mat &img);
+
+signals:
+    void s_exposureTime(int t); //change exposure time
+
+private:
+    ImageCapturer(){}
+
+private:
+    static ImageCapturer* pImageCapturer;
+    static std::mutex m_mutex;
+
+    MIL_ID MilApplication;
+    MIL_ID MilSystem;
+    //MIL_ID MilDisplay;
+    MIL_ID MilDigitizer;
+    MIL_ID MilImage;
+
+    int _w; //image width
+    int _h; //image height
+
+
+    //grabage collection
+    class GC
+    {
+    public:
+        ~GC()
+        {
+            if(pImageCapturer!=nullptr)
+            {
+                std::cout<<"Here destroy the pImageCaputrer..."<<std::endl;
+                delete pImageCapturer;
+                pImageCapturer=nullptr;
+            }
+        }
+        static GC gc;
+
+    };
+};
+
+#endif // IMAGECAPTURER_H
+```
+
+```c++
+#include<iostream>
+#include <mutex>
+#include "imagecapturer.h"
+#include "mil.h"
+
+ImageCapturer::GC ImageCapturer::GC::gc; //important!
+
+ImageCapturer *ImageCapturer::pImageCapturer=nullptr;
+
+std::mutex ImageCapturer::m_mutex;
+
+ImageCapturer *ImageCapturer::GetInstance(){
+    if(pImageCapturer==nullptr)
+    {
+        std::lock_guard<std::mutex> lock(m_mutex);
+        if(pImageCapturer==nullptr)
+        {
+            pImageCapturer=new ImageCapturer();
+        }
+    }
+    return pImageCapturer;
+}
+
+void ImageCapturer::init()
+{
+    MappAllocDefault(M_DEFAULT, &MilApplication, &MilSystem,M_NULL,
+                     &MilDigitizer, &MilImage);
+
+    _w=MdispInquire(MilDigitizer,M_SIZE_X,M_NULL);
+    _h=MdispInquire(MilDigitizer,M_SIZE_Y,M_NULL);
+}
+
+void ImageCapturer::changeExposure(int t){
+
+    emit s_exposureTime(t);
+}
+
+void ImageCapturer::getImage(cv::Mat &img)
+{
+    MdigGrab(MilDigitizer,MilImage);
+    int w=MbufInquire(MilImage,M_SIZE_X,M_NULL);
+    int h=MbufInquire(MilImage,M_SIZE_Y,M_NULL);
+    int band=MbufInquire(MilImage,M_SIZE_BAND,M_NULL);
+
+    IplImage *pImg=nullptr;
+    if(!pImg)
+    {
+        pImg=cvCreateImage(cvSize(w,h),8,band);
+    }
+    char *p=pImg->imageData;
+    MbufGet(MilImage,p);
+    img=cv::cvarrToMat(pImg);
+}
+```
