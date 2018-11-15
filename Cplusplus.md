@@ -928,4 +928,5 @@ void ImageCapturer::getImage(cv::Mat &img)
 ```c++
 std::bind std::move std::forward std::function
 using DefectObserver=std::function<void(LocalDefectInfo)>;
+perfect forward ??????
 ```
