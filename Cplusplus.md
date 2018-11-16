@@ -933,4 +933,5 @@ static_cast<int&&>(b)
 ```
 ```c++
 functor : use () operator to simulate function behaviour
+using filePath = std::string;
 ```
