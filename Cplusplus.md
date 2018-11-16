@@ -931,3 +931,6 @@ using DefectObserver=std::function<void(LocalDefectInfo)>;
 perfect forward ??????
 static_cast<int&&>(b)
 ```
+```c++
+functor : use () operator to simulate function behaviour
+```
