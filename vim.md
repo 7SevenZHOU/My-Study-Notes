@@ -19,3 +19,9 @@ to select chunks of text use shift + left/right arrow key
 you can repeatedly push the delete keys below, like a regular delete button
 3.d or x to delete
 ```
+
+
+```
+ctrl+u ctrl+d
+ctrl+f ctrl+b
+```
