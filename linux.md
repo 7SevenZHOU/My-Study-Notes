@@ -121,3 +121,6 @@ chmod u=rwx,go=rx .bashrc
 chmod a+w .bashrc
 chmod a-x .bashrc
 ```
+```
+git clone ssh://git@xxx.synology.me:[port]/Git/Kaggle/Whale.git
+```
