@@ -116,3 +116,6 @@ export usage
 ```
 https://www.tutorialspoint.com/unix_commands/export.htm
 ```
+```
+chmod u=rwx,go=rx .bashrc
+```
