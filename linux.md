@@ -118,4 +118,6 @@ https://www.tutorialspoint.com/unix_commands/export.htm
 ```
 ```
 chmod u=rwx,go=rx .bashrc
+chmod a+w .bashrc
+chmod a-x .bashrc
 ```
