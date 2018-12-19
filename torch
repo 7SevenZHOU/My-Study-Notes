@@ -1,0 +1,9 @@
+```
+#b is reference of a
+a=torch.ones(5)
+b=a.numpy()
+a.add_(1)
+print(a)
+print(b)
+
+```
