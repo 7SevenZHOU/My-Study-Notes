@@ -43,3 +43,13 @@ json.dump(d,open("./testfile2.txt","w"))
 
 d2 = json.load(open("./testfile2.txt"))
 ```
+```python
+>>> s = list("Hello zorld")
+>>> s
+['H', 'e', 'l', 'l', 'o', ' ', 'z', 'o', 'r', 'l', 'd']
+>>> s[6] = 'W'
+>>> s
+['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']
+>>> "".join(s)
+'Hello World'
+```
