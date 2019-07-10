@@ -23,6 +23,8 @@ sudo vim /etc/shadowsocks.json
 "fast_open":false,
 "workers":1
 }
+
+if libev,delete local_address local_port and add firewall rule
 ```
 *3.start at boot*  
 ```
